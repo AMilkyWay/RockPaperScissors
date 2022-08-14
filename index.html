@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            background-color: rgb(50, 50, 50);
+        }
+        #rock {
+            z-index: 0;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            margin-left: -10px;
+            transform: translate(-50%, -50%);
+            width: 125px;
+            height: 125px;
+            border-radius: 100%;
+            border-width: 25px;
+            background-image: url("img/Rock.png");
+            background-position-x: center;
+            background-position-y: center;
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-color: rgb(50, 50, 50);
+            box-shadow: 0px 2px 5px rgb(40, 40, 40);
+            transition-duration: .5s;
+        }
+        #scissors {
+            z-index: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -10px;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            border-width: 2px;
+            background-image: url("img/Scissors.png");
+            background-position-x: center;
+            background-position-y: center;
+            background-size: 90px;
+            background-repeat: no-repeat;
+            background-color: rgb(50, 50, 50);
+            box-shadow: 0px 2px 5px rgb(40, 40, 40);
+            transition-duration: .5s;
+        }
+        #paper {
+            z-index: 0;
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            margin-left: -10px;
+            transform: translate(-50%, -50%);
+            width: 125px;
+            height: 125px;
+            border-radius: 100%;
+            border-width: 2px;
+            background-image: url("img/Paper.png");
+            background-position-x: 20px;
+            background-position-y: center;
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-color: rgb(50, 50, 50);
+            box-shadow: 0px 2px 5px rgb(40, 40, 40);
+            transition-duration: .5s;
+        }
+        #rock:hover {
+            background-color: rgb(60, 60, 60);
+            width: 130px;
+            height: 130px;
+            background-size: 90px;
+            box-shadow: 0px 4px 10px rgb(40, 40, 40);
+        }
+        #scissors:hover {
+            background-color: rgb(60, 60, 60);
+            width: 130px;
+            height: 130px;
+            background-size: 80px;
+            box-shadow: 0px 4px 10px rgb(40, 40, 40);
+        }
+        #paper:hover {
+            background-color: rgb(60, 60, 60);
+            width: 130px;
+            height: 130px;
+            background-size: 90px;
+            box-shadow: 0px 4px 10px rgb(40, 40, 40);
+            background-position-x: 25px;
+        }
+    </style>
+    <script src = "script.js"></script>
+<head>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div id="rock" onclick="activate(); playSound('sound/activate.mp3')"></div>
+    <div id="scissors" onclick="activate(); playSound('sound/activate.mp3')"></div>
+    <div id="paper" onclick="activate(); playSound('sound/activate.mp3')"></div>
+</body>
+</html>
