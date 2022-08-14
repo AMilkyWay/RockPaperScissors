@@ -52,3 +52,7 @@ let restart = function() {
     localStorage.clear()
     switchTo("index.html")
 }
+
+let timeout = function(f, s) {
+  setTimeout(() => {f()}, s);
+}
